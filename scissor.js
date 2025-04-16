@@ -15,16 +15,22 @@ console.log(getComputerChoice());
 
 function getHumanChoice(humanChoice){
    let Choice = prompt("What number do you choose?");
-   if (Choice <= 1){
+   if (Choice === "Rock"){
     return "Rock it";
-   }else if (Choice <=100 ){
+   }else if (Choice === "Paper" ){
     return "It's a paper";
-   }else if (Choice % 5 === 0){
-    return "Scissors";
+   }else if (Choice === "Scissors"){
+    return "Cut it";
    }
    else{
-    return("PLEASE INPUT A NUMBER");
+    return("PLEASE INPUT 'Rock, Paper or Scissors'");
    }
 }
 console.log(getHumanChoice())
 
+const humanScore = 0;
+const computerScore = 0;
+
+function playRound(humanChoice, computerChoice){
+
+}
